@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editoren / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Obsidian
+.obsidian/
+.trash/
+
+# Lokale Zugangsdaten und Umgebung
+.env
+.env.local
+
+# Temporäres
+*.log
+*.tmp
+
+# Quartz
+node_modules/
+public/
+.quartz-cache/
+.playwright-mcp/

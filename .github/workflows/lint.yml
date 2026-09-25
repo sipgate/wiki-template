@@ -1,0 +1,21 @@
+name: Lint Wiki
+
+on:
+  # Immer bei PRs: Das Rule-Set verlangt den Check "lint" pauschal --
+  # ein Paths-Filter wuerde PRs ohne Wiki-Aenderungen (Workflows,
+  # Renovate) blockieren, weil der Check dann nie laeuft.
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python3 scripts/lint-wiki.py

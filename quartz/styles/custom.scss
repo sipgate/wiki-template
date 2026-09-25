@@ -1,0 +1,13 @@
+@use "./variables.scss" as *;
+
+// put your custom CSS here!
+
+// Seitentitel ("Kraftwerk3000 Wiki") in sipgate-Grün
+.page-title a {
+  color: #00ac46;
+}
+
+// TOC-Hover in Blau statt Salbeigrün
+.toc a:hover {
+  color: var(--secondary);
+}
