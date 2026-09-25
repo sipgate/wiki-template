@@ -12,8 +12,8 @@ Basiert auf dem [LLM-Wiki-Pattern von Andrej Karpathy](https://gist.github.com/k
    - `pageTitle`: Name des Wikis
    - `baseUrl`: die Web-Adresse der späteren GitHub-Pages-Site, **ohne** `https://`.
      Sie steht schon vor der Aktivierung fest und ergibt sich immer aus
-     `<org>.github.io/<repo-name>` -- für ein Repo in der sipgate-Org heißt das
-     z. B. `sipgate.github.io/mein-wiki`. (Nicht zu verwechseln mit dem Repo-Link
+     `sipgate.github.io/<repo-name>` -- für ein Repo `mein-wiki` also
+     `sipgate.github.io/mein-wiki`. (Nicht zu verwechseln mit dem Repo-Link
      auf `github.com` -- der gehört nur in den Footer-Link, siehe unten.)
      Quartz baut daraus alle internen Links, Sitemap und RSS: steht hier der
      falsche Wert, sind die Links der veröffentlichten Site kaputt.
