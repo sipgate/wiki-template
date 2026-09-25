@@ -10,16 +10,9 @@ Basiert auf dem [LLM-Wiki-Pattern von Andrej Karpathy](https://gist.github.com/k
 1. **Repo aus dem Template anlegen** -- Button „Use this template" oben rechts.
 2. **Quartz konfigurieren** in `quartz.config.yaml`:
    - `pageTitle`: Name des Wikis
-   - `baseUrl`: die Web-Adresse der späteren GitHub-Pages-Site, **ohne** `https://`.
-     Sie steht schon vor der Aktivierung fest und ergibt sich immer aus
-     `sipgate.github.io/<repo-name>` -- für ein Repo `mein-wiki` also
-     `sipgate.github.io/mein-wiki`. (Nicht zu verwechseln mit dem Repo-Link
-     auf `github.com` -- der gehört nur in den Footer-Link, siehe unten.)
-     Quartz baut daraus alle internen Links, Sitemap und RSS: steht hier der
-     falsche Wert, sind die Links der veröffentlichten Site kaputt.
-   - Footer-Link `GitHub:` auf das eigene Repo zeigen lassen, also
-     `https://github.com/sipgate/<repo-name>` -- das ist der Repo-Link, nicht die
-     Pages-Adresse.
+   - `baseUrl`: Deine Web-Adresse (z. B. `sipgate.github.io/mein-wiki`)
+     ⚠️ **Wichtig:** Das ist die Adresse der Website, nicht das GitHub-Repo!
+   - `GitHub`: Link zum Repo (z. B. `https://github.com/sipgate/mein-wiki`)
 3. **GitHub Pages aktivieren**: Repo → Settings → Pages → Source: **GitHub Actions**.
    Der Workflow `deploy.yml` baut bei jedem Push auf `main` und veröffentlicht die Site.
 4. **`AGENTS.md` anpassen**: Thema des Wikis beschreiben (erste Zeilen) und die
