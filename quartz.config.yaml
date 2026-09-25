@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: de-DE
-  baseUrl: ORG.github.io/REPO  # TODO: anpassen (siehe README)
+  baseUrl: sipgate.github.io/REPO-NAME  # TODO: Pages-Adresse des Repos, ohne https:// (siehe README)
   ignorePatterns:
     - private
     - templates
@@ -206,7 +206,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/ORG/REPO  # TODO: Repo-Link anpassen
+        GitHub: https://github.com/sipgate/REPO-NAME  # TODO: Repo-Link anpassen
     layout:
       position: footer
       priority: 50
